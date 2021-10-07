@@ -1,0 +1,107 @@
+<div class="container-fluid">
+<div class="row">
+    <div class="col-12">
+
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" style="text-align: center;">
+ <h3 style="text-align: center; color: red;" >! Register Here !</h3>
+        <div class="formgroup">
+
+<label for ="empname" class="fa-fa-user"></label>
+<input  type="text" formControlName="empname" placeholder="enter your name">
+<span class ="text.denger" *ngIf="registerForm.controls.empname && registerForm.controls.empname.touched">
+Name is Required</span>
+</div><br>
+
+<div class="formgroup">
+    <label for ="email" class="fa-fa-email"></label>
+    <input  type="text" formControlName="email" placeholder="enter your email">
+    <span class ="text.denger" *ngIf="registerForm.controls.email && registerForm.controls.email.touched">
+    <br>email is Required</span>
+    </div><br>
+    
+    <div class="formgroup">
+        <label for ="mobileno" class="fa-fa-mobileno"></label>
+        <input  type="text" formControlName="mobileno" placeholder="enter your mobileno">
+        <span class ="text.denger" *ngIf="registerForm.controls.mobileno && registerForm.controls.mobileno.touched">
+        <br>mobileno is Required</span>
+        </div><br>
+
+
+        <div class="formgroup">
+            <label for ="designation" class="fa-fa-designation"></label>
+            <input  type="text" formControlName="designation" placeholder="enter your designation">
+            <span class ="text.denger" *ngIf="registerForm.controls.designation && registerForm.controls.designation.touched">
+            <br>designation is Required</span>
+            </div><br>
+
+
+            <div class="formgroup">
+                <label for ="username" class="fa-fa-username"></label>
+                <input  type="text" formControlName="username" placeholder="enter your username">
+                <span class ="text.denger" *ngIf="registerForm.controls.username && registerForm.controls.username.touched">
+                <br>username is Required</span>
+                </div><br>
+
+
+                <div class="formgroup">
+                    <label for ="password" class="fa-fa-password"></label>
+                    <input  type="text" formControlName="password" placeholder="enter your password">
+                    <span class ="text.denger" *ngIf="registerForm.controls.password && registerForm.controls.password.touched">
+                    <br>password is Required</span>
+                    </div><br>
+               
+        
+    
+<div class="text-center">
+    <button id ="submitButton"  type="submit "  class="btn-btn-primary" [disabled]="!registerForm.valid">Register</button>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" style="text-align: center;">
+    registration form start -->
+    <!-- <h3 style="text-align: center; color: darkviolet;" >! Register Here !</h3>
+    <div  >
+        Name : <input  type="text" formControlName="empname" placeholder="enter name"
+        >
+    </div>
+    <br>
+    <div>
+       Email :<input  type="text" formControlName="email"placeholder="enter email"
+        >
+    </div><br>
+    
+    <div >
+       Mobile :<input  type="text" formControlName="mobileno" placeholder="enter mbole no"
+        >
+    </div>
+    <br>
+    <div >
+    Designation: <input  type="text" formControlName="designation" placeholder="enter Designation"
+        >
+    </div>
+    <br>
+    <div >
+        Username:  <input  type="text" formControlName="username" placeholder="enter username"
+        >
+    </div>
+    <br>
+    <div >
+      pas  sword :  <input  type="password" formControlName="password" placeholder="enter password"
+        >
+    </div>
+            <button class="btn btn-primary" type="submit" >Register</button>
+    
+            <div>
+            <a  class="btn btn-danger " style="text-align: right;" routerLink="/login" > back </a>
+            </div>
+            
+    </form>
+    
+   --> 

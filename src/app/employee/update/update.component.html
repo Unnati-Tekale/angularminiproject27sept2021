@@ -1,0 +1,46 @@
+<form [formGroup]="upadateForm" (ngSubmit)="onSubmit()" style="text-align: center;">
+    <!--registration form start -->
+    <h3 style="text-align: center; color: darkviolet;" >! Update Here !</h3>
+    <div  >
+        Id : <input  type="text" formControlName="id" placeholder="enter name"
+        >
+    </div>
+    <div  >
+        Name : <input  type="text" formControlName="empname" placeholder="enter name"
+        >
+    </div>
+    <br>
+    <div>
+       Email :<input  type="text" formControlName="email"placeholder="enter email"
+        >
+    </div><br>
+    
+    <div >
+       Mobile :<input  type="text" formControlName="mobileno" placeholder="enter mbole no"
+        >
+    </div>
+    <br>
+    <div >
+    Designation: <input  type="text" formControlName="designation" placeholder="enter Designation"
+        >
+    </div>
+    <br>
+    <div >
+        Username:  <input  type="text" formControlName="username" placeholder="enter username"
+        >
+    </div>
+    <br>
+    <div >
+      password :  <input  type="password" formControlName="password" placeholder="enter password"
+        >
+    </div>
+            <button class="btn btn-primary" type="submit" >update</button>
+    
+            <div>
+            <a  class="btn btn-danger " style="text-align: right;" routerLink="/login" > back </a>
+            </div>
+            
+    </form>
+    
+    
+

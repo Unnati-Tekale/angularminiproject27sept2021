@@ -1,0 +1,31 @@
+
+  <router-outlet></router-outlet>
+  <div class="container">
+    <table class="table table-striped" border="1">
+      <tbody >
+          <tr><td>Employee Id</td>
+              <td>Employee Name</td>
+              <td>Employee Email</td>
+              </tr>
+        <tr *ngFor="let emp1 of emplist">
+          <td>{{emp1.id}}</td>
+          <td>{{emp1.empname}}</td>
+          <td>{{emp1.email}}</td>
+          <td><a [routerLink]="['employeedetail',emp1.id]">show details</a></td>
+          <td><a class="btn" [routerLink]="['update']" [state]="emp1">
+             <i class="fa fa-edit"    ></i>
+             <!-- <i class="fa fa-edit" (click)="editemployee(emp)"></i> -->
+                      
+          </a>
+          </td>
+          <td><a class="btn">
+            <i class="fa fa-trash " (click)="deleteemployee(emp1.id)"></i>
+          </a>                       
+          </td>                                  
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <button (click)="getback()">Go Back</button>
+<router-outlet></router-outlet>
+ 

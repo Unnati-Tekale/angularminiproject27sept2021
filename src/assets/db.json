@@ -1,0 +1,22 @@
+{
+  "Employee": [
+    {
+      "id": 1,
+      "empname": "sharad",
+      "email": "unnu@123gmail.com",
+      "mobileno": "2345678",
+      "designation": "tester",
+      "username": "g",
+      "password": "g"
+    },
+    {
+      "id": 2,
+      "empname": "67890-",
+      "email": "kljhg",
+      "mobileno": "l;kjhmn",
+      "designation": "';lkj",
+      "username": "kk",
+      "password": "k"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+
+<div class="login">
+    <h2 style="color: red;">Login Here....</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+    
+        <div class="form-group">
+        <input type="text" placeholder="Username"  class="form-control" formControlName="userName" />
+
+        <div class="form-group">
+          <input type="password" placeholder="Password" class="form-control"formControlName="password"/>
+
+          <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block btn-large">login</button>
+      <div style="text-align: center; color: red;">
+    <a routerLink="register">Click Here to Register</a>
+</div>
+  </div>  
+
+
+
+
+
